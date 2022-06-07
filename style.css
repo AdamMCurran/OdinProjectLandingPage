@@ -1,0 +1,98 @@
+body {
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+/*This is where the header content is.*/
+
+.header {
+    border-style: solid;
+    border-color: red;
+    background-color: seagreen;
+    color: whitesmoke;
+    display: flex;
+    
+}
+
+a,
+li {
+    text-decoration: none;
+    list-style: none;
+    color: whitesmoke;
+    display: flex;
+    flex-direction: row;
+}
+
+.logo {
+    border-style: solid;
+    border-color: red;
+    height: 75px;
+    width: auto;
+    border-style: inset;
+    
+}
+
+/*This is where the main body content is.*/
+.content {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.content-title {
+    border-style: solid;
+    border-color: red;
+}
+.cards {
+    border-style: solid;
+    border-color: red;
+    display: flex;
+    flex: row wrap;
+}
+
+.card {
+    border-style: solid;
+    border-color: red;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+.card-img {
+    height: 25px;
+    max-width: 200px;
+}
+
+.fullquote {
+    border-style: solid;
+    border-color: red;
+}
+
+
+
+.card-img {
+    height: 100px;
+    width: auto;
+}
+
+.call-body {
+    border-style: solid;
+    border-color: red;
+}
+
+
+
+/*This is where the footer content is.*/
+
+.footer {
+    background-color: seagreen;
+    color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
