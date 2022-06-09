@@ -1,78 +1,134 @@
 body {
-    font-weight: bold;
+    
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin: 0;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    
 }
-/*This is where the header content is.*/
+/*This is where the header content is. Broken up by halves,
+and then individually.*/
 
 .header {
-    border-style: solid;
-    border-color: red;
     background-color: seagreen;
     color: whitesmoke;
     display: flex;
+    flex-flow: column wrap;
     
+    
+}
+.top-header,
+.bottom-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.logo {
+    height: 75px;
+    width: auto;
+    border-style: inset;
+    margin-left: 25%;
+    margin-top: 12px;
 }
 
 a,
-li {
+ul {
     text-decoration: none;
     list-style: none;
     color: whitesmoke;
     display: flex;
-    flex-direction: row;
+    font-size: 12px;
+}
+ul {
+    margin-right: 25%;
 }
 
-.logo {
-    border-style: solid;
-    border-color: red;
-    height: 75px;
-    width: auto;
-    border-style: inset;
+li {
+    flex-wrap: nowrap;
+    width: 150px;
+}
+
+.header-content {
+    max-width: 350px;
+    max-height: 250px;
+    display: flex;
+    flex-flow: column wrap;
+    margin-left: 25%;
+    margin-top: 12px;
+    justify-content: space-around;
+}
+.header-title {
+    font-weight: bold;
+    font-size: 32px;
     
 }
 
-/*This is where the main body content is.*/
+.header-button {
+    align-self: flex-start;
+    color: whitesmoke;
+    background-color: cornflowerblue;
+    border-style: none;
+    border-radius: 2px;
+    padding-inline: 12px;
+    padding-block: 6px;
+}
+
+.header-image {
+    margin-right: 25%;
+    max-height: 250px;
+}
+
+/*This is where the main body content is. */
 .content {
     display: flex;
     justify-content: center;
     flex: 1;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 .content-title {
-    border-style: solid;
-    border-color: red;
+    font-size: 30px;
+    font-weight: bold;
+    
 }
 .cards {
-    border-style: solid;
-    border-color: red;
     display: flex;
     flex: row wrap;
+    height: 300px;
+    
 }
 
 .card {
-    border-style: solid;
-    border-color: red;
     display: flex;
     flex: 1;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
 }
 
 .card-img {
-    height: 25px;
-    max-width: 200px;
+    height: auto;
+    width: 100px;
 }
 
 .fullquote {
-    border-style: solid;
-    border-color: red;
+    max-width: 33%;
 }
 
+.quote {
+    font-size: 20px;
+    font-style: italic;
+}
+
+.subquote {
+    font-size: 14px;
+    font-weight: bold;
+    text-align: end;
+}
 
 
 .card-img {
@@ -81,10 +137,29 @@ li {
 }
 
 .call-body {
-    border-style: solid;
-    border-color: red;
+    border-radius: 1em;
+    color: whitesmoke;
+    background-color: darkgreen;
+    padding-inline: 50px;
+    padding-block: 25px;
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
 }
 
+.call-title {
+    font-weight: bold;
+}
+
+.call-subtitle {
+    font-size: 14px;
+}
+.call-button {
+    align-self: center;
+    border-color: whitesmoke;
+    background-color: darkgreen;
+
+}
 
 
 /*This is where the footer content is.*/
